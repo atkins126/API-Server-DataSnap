@@ -1,0 +1,534 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <PropertyGroup/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>base64-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Virtus_AppServer.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>Virtus_AppServer.rsm</RemoteName>
+            <DeployClass>DebugSymbols</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>base64.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>json2.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\ServerFunctionExecutor-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ServerFunctionExecutor-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\ssleay32.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ssleay32.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\CallbackFramework.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>CallbackFramework.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\CallbackFramework-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>CallbackFramework-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\ServerFunctionExecutor.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ServerFunctionExecutor.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>json2-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\ServerFunctionExecutor.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ServerFunctionExecutor.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>json2-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\pgxalib.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>pgxalib.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\pgenlist.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>pgenlist.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\pgenlista.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>pgenlista.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\msvcr100.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>msvcr100.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>json2.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\CallbackFramework.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>CallbackFramework.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\psqlodbc35w.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>psqlodbc35w.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>base64-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\libpq.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>libpq.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>base64.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\psqlodbc30a.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>psqlodbc30a.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Release\Virtus_AppServer.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>Virtus_AppServer.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\libintl.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>libintl.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win64\Debug\Virtus_AppServer.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>Virtus_AppServer.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="js\ServerFunctionExecutor-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ServerFunctionExecutor-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\libeay32.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>libeay32.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\CallbackFramework-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>CallbackFramework-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="js\ServerFunctionExecutor.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ServerFunctionExecutor.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\ssleay32.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ssleay32.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>json2-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>base64-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>base64.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\CallbackFramework-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>CallbackFramework-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\CallbackFramework.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>CallbackFramework.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>base64-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\pgxalib.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>pgxalib.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>json2-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\CallbackFramework-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>CallbackFramework-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\pgenlist.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>pgenlist.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\pgenlista.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>pgenlista.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\msvcr100.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>msvcr100.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>json2.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win32\Release\Virtus_AppServer.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>Virtus_AppServer.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="js\json2.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>json2.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\psqlodbc35w.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>psqlodbc35w.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\libpq.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>libpq.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\psqlodbc30a.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>psqlodbc30a.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\libintl.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>libintl.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win32\Debug\Virtus_AppServer.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>Virtus_AppServer.exe</RemoteName>
+            <DeployClass>ProjectOutput</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="C:\goodrel\libeay32.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>libeay32.dll</RemoteName>
+            <DeployClass>File</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\ServerFunctionExecutor-min.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ServerFunctionExecutor-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\CallbackFramework.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>CallbackFramework.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\ServerFunctionExecutor-min.js" Condition="'$(Config)'=='Release'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ServerFunctionExecutor-min.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\base64.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>base64.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="js\ServerFunctionExecutor.js" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Virtus_AppServer\</RemoteDir>
+            <RemoteName>ServerFunctionExecutor.js</RemoteName>
+            <DeployClass>ProjectFile</DeployClass>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Linux64'"/>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'"/>
+    <ItemGroup Condition="'$(Platform)'=='Android'"/>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'"/>
+</Project>
